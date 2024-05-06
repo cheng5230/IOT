@@ -1,0 +1,227 @@
+# ref link: https://alinex.gitlab.io/env/mkdocs/
+#===================================================================================#
+# Site Information
+#===================================================================================#
+site_name: 飞腾云音频|XMOS AI专业音频方案商|XMOS方案
+site_description: 深圳市飞腾云科技有限公司-XMOS AI专业音频方案商
+site_author: Phaten
+site_dir: '../../site/zh'
+copyright: Copyright &copy; 2024 <a href="https://www.phaten-iot.com">深圳市飞腾云科技有限公司</a>
+
+#===================================================================================#
+# Mkdocs Theme (Material Mkdocs) + Extras
+#===================================================================================#
+theme:
+  name: material
+  custom_dir: material
+  language: en
+  #logo: assets/images/logos/binbash-icon.png
+  # icon: # https://www.materialpalette.com/icons
+  logo: assets/images/logos/phaten-logo-cn.png
+  favicon: assets/images/logos/phaten-logo-ico.png
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - content.footnote.tooltips
+    - content.tooltips
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.instant.preview
+    - navigation.tabs
+    - navigation.top
+    - navigation.path
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+  palette:
+    - scheme: default
+      #primary: teal
+      accent: blue
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      #primary: teal
+      accent: blue
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+plugins:
+  - blog
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - minify:
+      minify_html: true
+  - glightbox:
+       touchNavigation: true
+       loop: false
+       effect: zoom
+       slide_effect: slide
+       width: 100%
+       height: auto
+       zoomable: true
+       draggable: true
+       skip_classes:
+         - custom-skip-class-name
+       auto_caption: true
+       caption_position: bottom
+       background: white
+       shadow: true
+
+extra_css:
+    - assets/stylesheets/extra.css
+
+extra_javascript:
+    - assets/javascripts/extra.js
+
+extra:
+  status:
+    new: Recently added
+    deprecated: Deprecated
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+  alternate:
+    # Switch to English
+    - name: English
+      #link: https://leverage.binbash.co
+      link: /en/
+      lang: en
+
+    # Switch to Chinese
+    - name: 简体中文
+      #link: https://leverage.binbash.co/zh/
+      link: /zh/
+      lang: zh
+
+#===================================================================================#
+# Mkdocs Markdown Extentions, Plugins & extras
+#===================================================================================#
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __spanpymdownx.tilde
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      base_path:
+        - docs
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+#===================================================================================#
+# Mkdocs Navigation Tree
+#===================================================================================#
+nav:
+  - 首页: index.md
+  - 解决方案:
+    - solutions/index.md
+    - 麦克风阵列:
+      - solutions/mic_array_solution/index.md
+      - XU316 7MIC无感本地扩音方案: solutions/mic_array_solution/phaten_xu316-la_7mic_solution.md
+    - USB HiFi声卡:
+      - solutions/hifi_audio/index.md
+      - XU316 USB多路高清音频解码器方案: solutions/hifi_audio/phaten_xu316_hifi_audio_solution.md
+  # - XMOS USB 高清降噪麦克风系列方案: try-leverage/leverage-project-setup.md
+  - 产品中心:
+    - products/index.md
+    - 麦克风阵列:
+        - FTXU316-LA-7MIC-V1:
+          - products/array_mic/ftxu316_la_7mic_v1_pcba/index.md
+    - USB HiFi声卡:
+        - A316_1926V1 USB多路音频解码器模组: 
+          - products/hifi_audio/a316_1926v1/index.md
+  - 开发文档:
+    - dev_doc/index.md
+    - 麦克风阵列:
+      - 开发及评估板:
+        - XMOS XU316 2MIC评估板: 
+          - dev_doc/array_mic/xk_voice_l71/index.md
+        - XMOS XVF3800 4MIC语音会议评估板: 
+          - dev_doc/array_mic/xk_voice_sq66/index.md
+        - FTXU316-LA-7MIC-V1评估板: 
+          - dev_doc/array_mic/ftxu316_la_7mic_v1_evb/index.md
+      - 模组及PCBA: 
+        - FTXU316-LA-7MIC-V1套件:
+          - dev_doc/array_mic/ftxu316_la_7mic_v1/index.md
+          - PCBA套件硬件规格书: dev_doc/array_mic/ftxu316_la_7mic_v1/硬件规格书.md
+          - 成品及评估板安装使用说明: dev_doc/array_mic/ftxu316_la_7mic_v1/使用说明.md
+
+    - USB HiFi声卡:
+      - 开发及评估板:
+        - XMOS XU316 USB多声道音频评估板: 
+          - dev_doc/hifi_audio/xk_audio_316_mc_ab/index.md
+        - PBAX316-90108MV1评估板: 
+          - dev_doc/hifi_audio/pbax316_90108mv1/index.md
+          - 评估板硬件规格书: dev_doc/hifi_audio/pbax316_90108mv1/硬件规格书.md
+          - 评估板使用说明: dev_doc/hifi_audio/pbax316_90108mv1/使用说明.md
+          - 评估板测试指标: dev_doc/hifi_audio/pbax316_90108mv1/测试指标.md
+      - 模组及PCBA: 
+        - A316-1926V1:
+          - dev_doc/hifi_audio/a316_1926v1/index.md
+  - 样品购买:
+    - buy_sample/index.md
+  - 服务&支持:
+    - services_support/index.md
+    - 下载中心:
+      - 工具和软件: 
+        - download/tools_software/index.md
+      - 产品设计资料: 
+        - download/product_resource/index.md
+    - 常见问题:
+      - XMOS USB audio 驱动说明: faq/xmos_usb_audio_driver.md
+    - 咨询及服务:
+      - acquire_services/index.md
+  - 技术文章:
+    - blog/index.md
+  - 关于我们:
+      - about_us/index.md
+      - 关于XMOS: about_us/xmos.md
+      - 加入我们: about_us/join_us.md
+      - 联系我们: about_us/contact_us.md

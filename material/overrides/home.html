@@ -1,0 +1,336 @@
+{% extends "overrides/main-styles.html" %}
+
+<!-- Render hero under tabs -->
+{% block tabs %}
+{{ super() }}
+
+<!-- Hero for landing page -->
+
+<!--binbash leverage documetation-->
+<section class="first-gradiant-body w-100">
+  <div class="md-grid conteiner-row pt-1 pt-lg-5 my-4">
+    <div class="px-3 ctx-header-text conteiner">
+      <div class="conteiner-row">
+        <p class="h1 t-b text-xs-center">
+          Wi-Fi Matter预烧录DAC模组
+        </p>
+      </div>
+      <p class="h3 pt-2 text-xs-center">Matter采用基于公钥基础设施(PKI)的安全模型，通过追溯设备DAC证书的证书链来验证设备合法性。DAC是Matter设备从设计到量产过程中不可或缺的一环，每一个量产的Matter设备都需要DAC，<span class="t-b">如果缺失DAC，设备厂商即便通过了CSA Matter认证，也无法完成Matter设备的量产出货。</span></p>
+      <p class="h3 pt-2 text-xs-center">飞腾云提供预烧录DAC模组，模组出厂已经预烧录了DAC，可以使用此模组就可以开发和认证Matter产品，合法的接入到Matter生态中。</p>
+      <div class="conteiner-row conteiner-xs">
+        <button
+          type="button"
+          title="{{ page.next_page.title | e }}"
+          onclick="location.href='./solutions/hifi_audio/phaten_xu316_hifi_audio_solution/'"
+          class="btn-dark btn-xl-large btn-lg-large mx-3  mt-3 my-md-5 my-lg-5 my-xl-5 box-shadow"
+        >
+            方案详情
+        </button>
+      </div>
+    </div>
+    <div class="ctx-header-img d-lg">
+      <!--img src="assets/images/logos/first-gradiant-logo.png" class="laverage-header-img mx-lg-5" /-->
+    </div>
+  </div>
+
+</section>
+
+<section class="first-gradiant-body w-100">
+  <div class="md-grid conteiner-row pt-1 pt-lg-5 my-4">
+    <div class="px-3 ctx-header-text conteiner">
+      <div class="conteiner-row">
+        <p class="h1 t-b text-xs-center">
+          Tasmota Matter Ready模组
+        </p>
+      </div>
+      <p class="h3 pt-2 text-xs-center">我们深耕于XMOS Hi-Fi音频，麦克风阵列，语音降噪等领域，提供完整且可靠的客制化音频解决方案，致力于为客户创造价值</p>
+      <div class="conteiner-row conteiner-xs">
+        <button
+          type="button"
+          title="{{ page.next_page.title | e }}"
+          onclick="location.href='./solutions/hifi_audio/phaten_xu316_hifi_audio_solution/'"
+          class="btn-dark btn-xl-large btn-lg-large mx-3  mt-3 my-md-5 my-lg-5 my-xl-5 box-shadow"
+        >
+            方案详情
+        </button>
+      </div>
+    </div>
+    <div class="ctx-header-img d-lg">
+      <!--img src="assets/images/logos/first-gradiant-logo.png" class="laverage-header-img mx-lg-5" /-->
+    </div>
+  </div>
+
+</section>
+<!--
+<section class="second-gradiant-body w-100">
+  <div class="md-grid conteiner-row pt-4 my-4">
+    <div class="card-white py-3 mx-xs-3 mx-sm-3 mx-4 mx-xl-0 ">
+      <div class="conteiner-row">
+        <div class="conteiner ctx-card-white-1 pt-4">
+          <div class="d-sm text-align-center">
+            <p class="display-3 Telegraf-UltraBold text-dark mx-auto mt-4">We ship it.</p>
+            <p class="display-3 Telegraf-UltraBold text-pink mx-auto my-4">You own it.</p>
+          </div>
+          <div class="d-sm-none d-md-none d-lg-none d-xl-none text-align-center">
+            <p class="display-4 Telegraf-UltraBold text-dark mx-auto mt-4">We ship it.</p>
+            <p class="display-4 Telegraf-UltraBold text-pink mx-auto my-4">You own it.</p>
+          </div>
+
+          <div class="conteiner ctx-card-white-1 text-dark h3 d-lg-none d-xl-none my-xs-5 my-sm-5 my-md-5">
+            <ul class="ul-home mx-xs-auto mx-sm-auto mx-md-auto my-xs-5 my-sm-5 my-md-5">
+              <li>- Own your AWS infrastructure</li>
+              <li>- Implement, reuse and scale faster</li>
+              <li>- Bootstrap your AWS Landing Zone</li>
+              <li>- Proven libraries and modules</li>
+              <li>- Modern Terraform, Ansible, Helm, K8s Stack</li>
+              <li>- Optimize your cloud costs by design</li>
+              <li>- Secure your cloud assets and production workloads</li>
+              <li>- Achieve compliance in AWS</li>
+            </ul>
+          </div>
+
+          <button
+            onclick="window.open('https://github.com/binbashar', '_blank')"
+            title="{{ lang.t('source.link.title') }}"
+            type="button"
+            class="btn-white btn-xl-large btn-lg-large box-shadow mx-auto my-4"
+          >
+            Contribute on GitHub
+          </button>
+        </div>
+        <div class="conteiner ctx-card-white-1 text-dark h3 d-lg">
+          <ul>
+            <li>- Own your AWS infrastructure</li>
+            <li>- Implement, reuse and scale faster</li>
+            <li>- Bootstrap your AWS Landing Zone</li>
+            <li>- Proven libraries and modules</li>
+            <li>- Modern Terraform, Ansible, Helm, K8s Stack</li>
+            <li>- Optimize your cloud costs by design</li>
+            <li>- Secure your cloud assets and production workloads</li>
+            <li>- Achieve compliance in AWS</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="conteiner-row-lg conteiner-row-xl conteiner py-5 my-5">
+    <div class="conteiner" style="order:0; flex: 50%;">
+      <span class="h1 t-b text-dark mt-4 text-align-center mx-auto text-end-xl text-end-lg">为什么选择飞腾云？</span>
+      <div class="conteiner ctx-what-is mx-auto">
+        <div class="conteiner text-dark h3 text-align-start text-end-xl text-end-lg my-xs-5 my-sm-5 my-md-5">
+          <p class="my-3">
+            <img src="assets/images/icons/check-ok.svg" class="mx-2" width="20px" height="20px"/>
+            我们有国内最专业的XMOS技术人才，助力客户在Hi-Fi音频，数字会议，本地扩音，降噪麦克风等项目快速落地
+          </p>
+          <p class="my-3">
+            <img src="assets/images/icons/check-ok.svg" class="mx-2" width="20px" height="20px"/>
+            我们提供XMOS Hi-Fi音频，麦克风阵列，语音降噪 <span class="t-b">TurnKey</span> 解决方案，满足不同的产品需求
+          </p>
+          <p class="my-3">
+            <img src="assets/images/icons/check-ok.svg" class="mx-2" width="20px" height="20px"/>
+            我们有经过市场验证的XMOS<span class="t-b">模组</span>及<span class="t-b">PCBA</span>，助力客户快速完成产品设计
+          </p>
+          <p class="my-3">
+            <img src="assets/images/icons/check-ok.svg" class="mx-2" width="20px" height="20px"/>
+            我们有<span class="t-b">1万m²</span>自动化生产车间，给客户提供高品质的产品以及快速的产品交付
+          </p>
+          <p class="my-3">
+            <img src="assets/images/icons/check-ok.svg" class="mx-2" width="20px" height="20px"/>
+            我们有完善的产品文档支持，方便客户快速获取产品开发相关技术资料
+          </p>
+          <button
+            onclick="location.href='https://www.binbash.co/leverage'"
+            title="{{ page.next_page.title | e }}"
+            type="button"
+            class="btn-dark btn-xl-large btn-lg-large my-4 box-shadow ml-auto mx-xs-auto mx-sm-auto mx-md-auto"
+          >
+            产品中心
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="conteiner" style="order:1; flex: 50%; overflow:hidden;">
+      <!img src="assets/images/illustrations/fty-serves.png" class="laverage-mac-img my-xs-5 my-sm-5 my-md-5" />
+    </div>
+  </div>
+</section>
+-->
+<!--Why Leverage-->
+<!--
+<section class="third-dark-body w-100">
+  <div class="conteiner py-5 my-5">
+    <img src="assets/images/illustrations/why-leverage.svg" class="why-laverage-img" />
+    <img src="assets/images/illustrations/Ilustracion-Binbash.png" class="laverage-mac2-img" />
+    <div class="conteiner-row">
+      <div style="order:0; flex: 50%;">
+        <div class="conteiner ctx-card-white-1 text-white h3 my-5 d-xl-none d-lg-none mx-auto w-70">
+          <p class="my-3">
+            <img src="assets/images/icons/check-ok.svg" class="mx-2" width="20px" height="20px"/>
+            You will get your entire Cloud Native Application Infra in a few weeks.
+          </p>
+          <p class="my-3">
+            <img src="assets/images/icons/check-ok.svg" class="mx-2" width="20px" height="20px"/>
+            We've built every component based on the best recommended practices.
+          </p>
+          <p class="my-3">
+            <img src="assets/images/icons/check-ok.svg" class="mx-2" width="20px" height="20px"/>
+            Implement, reuse and scale your production workloads faster.
+          </p>
+        </div>
+        <div class="conteiner ctx-card-white-1 text-white h3 my-5 mx-auto w-70">
+          <btn
+            onclick="window.open('https://www.binbash.co/competition','_blank')"
+            title="{{ lang.t('source.link.title') }}"
+            type="button"
+            class="btn-rainbow btn-rainbow-custom btn-xl-large btn-lg-large mx-auto text-align-center cursor-pointer"
+          >
+            Leverage vs. Competition
+          </btn>
+        </div>
+      </div>
+      <div style="order:0; flex: 50%;" class="d-lg">
+        <div class="card-rainbow second-gradiant-body px-5 py-5" style="order:1; flex: 100%;">
+          <div class="conteiner ctx-card-white-1 text-dark h3">
+            <p class="my-3">
+              <img src="assets/images/icons/check-ok.svg" width="20px" height="20px"/>
+              If you implement our <span class="t-b">Reference AWS Cloud Solutions Architecture</span> and the <span class="t-b">Infrastructure as Code (IaC) Library</span> via <span class="t-b">Leverage CLI</span>, you will get your entire Cloud Native Application Infra in a few weeks.
+            </p>
+            <p class="my-3">
+              <img src="assets/images/icons/check-ok.svg" width="20px" height="20px"/>
+              We've built every component based on the best-recommended practices, mainly following the <span class="t-b">AWS Well-Architected Framework</span>, granting you ownership to implement, reuse and scale your production workloads faster.
+            </p>
+            <p class="my-3">
+              <img src="assets/images/icons/check-ok.svg" width="20px" height="20px"/>
+              Leverage will solve your entire infrastructure and grant you complete control of the source code, and of course, you'll be able to run it without us.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+<!--Our tech stack-->
+<!--
+<section class="four-blue-body w-100">
+  <div class="md-grid conteiner pt-0  my-0 my-xl-4 my-lg-4">
+    <p class="h1  t-b text-dark Telegraf-UltraBold mt-4 text-align-center text-start-xl text-start-lg">合作流程</p>
+    <img src="assets/images/logos/hz.png" class="mx-auto my-2" width="100%"/>
+    <div class="conteiner conteiner-row-lg conteiner-row-xl my-1">
+      <div class="text-dark h3 mx-4 my-3 mx-lg-0 my-xl-0 mx-lg-0 my-xl-0" style="order:0; flex: 4%;">
+      </div>
+      <div class="text-dark h3 mx-4 my-3 mx-lg-0 my-xl-0 mx-lg-0 my-xl-0" style="order:0; flex: 20%;">
+        <p><span class="h2 t-b">洽谈需求</span></p>
+      </div>
+      <div class="text-dark h3 mx-4 my-3 mx-lg-0 my-xl-0 mx-lg-0 my-xl-0" style="order:0; flex: 20%;">
+        <p><span class="h2 t-b">确认方案</span></p>
+      </div>
+      <div class="text-dark h3 mx-4 my-3 mx-lg-0 my-xl-0 mx-lg-0 my-xl-0" style="order:0; flex: 20%;">
+        <p><span class="h2 t-b">产品开发</span></p>
+      </div>
+      <div class="text-dark h3 mx-4 my-3 mx-lg-0 my-xl-0 mx-lg-0 my-xl-0" style="order:0; flex: 20%;">
+        <p><span class="h2 t-b">集成测试</span></p>
+      </div>
+      <div class="text-dark h3 mx-4 my-3 mx-lg-0 my-xl-0 mx-lg-0 my-xl-0" style="order:0; flex: 16%;">
+        <p><span class="h2 t-b">量产上线</span></p>
+      </div>
+      
+    </div>
+    <div class="conteiner conteiner-row-lg conteiner-row-xl my-4">
+      <div style="order:0; flex: 50%;">
+        <button
+          onclick="location.href='./acquire_services/'"
+          title="{{ page.next_page.title | e }}"
+          type="button"
+          class="btn-dark btn-xl-large btn-lg-large my-4 box-shadow mx-auto"
+        >
+          咨询及服务
+        </button>
+      </div>
+    </div>
+    <img src="/assets/images/diagrams/AWS-ORGANIZATION.png" class="mx-auto mt-5 mb-3 d-sm" width="100%"/>
+    <img src="assets/images/diagrams/ref-architecture-aws.png" class="mx-auto mt-5 mb-3 d-sm" width="100%"/>
+    <img src="assets/images/diagrams/diagrama-organization-binbash.png" class="mx-auto mt-5 d-sm-none d-md-none d-lg-none d-xl-none" width="100%"/>
+    <div class="conteiner-row my-0 my-xl-4 my-lg-4 stack-tenology-gradient">
+      <img src="assets/images/logos/stack-tecnologico-2.svg" class="mx-auto py-3" width="60%"/>
+    </div>
+  </div>
+</section>
+-->
+
+<!--Footer-->
+<footer class="bg-dark w-100">
+  <div class="md-grid conteiner-row-xl conteiner-row-lg conteiner pt-5 my-4">
+    <div class="conteiner-row" style="flex:70%">
+      <div class="text-white d-flex" style="flex: 20%;">
+        <img src="assets/images/logos/phaten-logo-cn.png" class="mx-auto" width="100%" height="50%"/>
+      </div>
+      <div class="text-white d-flex" style="flex: 10%;">
+      </div>
+      <div class="text-white" style="flex: 30%;">
+        <div class="conteiner text-white h35">
+          <ul>
+            <li class="cursor-pointer item-text-footer">
+              <a href=./solutions/ >解决方案</a>
+            </li>
+            <li class="cursor-pointer item-text-footer">
+              <a href=./products/ >产品中心</a>
+            </li>
+            <li class="cursor-pointer item-text-footer">
+              <a href="./download/tools_software/" >下载中心</a>
+            </li>
+            <li class="cursor-pointer item-text-footer">
+              <a href="./dev_doc/" >开发文档</a>
+            </li>
+            <li class="cursor-pointer item-text-footer">
+              <a href="./acquire_services/" >咨询及服务</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-white" style="flex: 40%;">
+        <div class="conteiner text-white h35">
+          <ul>
+            <li class="cursor-pointer item-text-footer">
+              <a href="./about_us/" >关于我们</a>
+            </li>
+            <li class="cursor-pointer item-text-footer">
+              <a href=".//about_us/xmos/" >关于XMOS</a>
+            </li>
+            <li class="cursor-pointer item-text-footer">
+              <a href="./about_us/join_us/" >加入我们</a>
+            </li>
+            <li class="cursor-pointer item-text-footer">
+              <a href="./buy_sample/" >样品购买</a>
+            </li>
+            <li class="cursor-pointer item-text-footer" target="_blank">
+              <a href="https://www.phaten.com" >飞腾云集团官网</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="conteiner-row" style="flex:30%">
+      <div class="text-white text-end h3" style="flex: 40%;">
+          <span>关注我们: </span>
+      </div>
+      <div class="text-white text-end h3" style="flex: 5%;">
+    </div>
+      <div class="text-white h3" style="flex: 55%;">
+          <img
+            src="assets/images/logos/phten-wechat.png"
+            title="飞腾云公众号"
+            class="mx-auto" 
+            class="mx-3 cursor-pointer item-social-media"
+            width="50%"
+          />
+      </div>
+    </div>
+  </div>
+</footer>
+
+{% endblock %}

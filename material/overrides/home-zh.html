@@ -1,0 +1,170 @@
+{% extends "overrides/main-styles.html" %}
+
+<!-- Render hero under tabs -->
+{% block tabs %}
+{{ super() }}
+
+<!-- Hero for landing page -->
+
+<!--binbash leverage documetation-->
+<section class="first-gradiant-body w-100">
+  <div class="md-grid conteiner-row pt-1 pt-lg-5 my-4">
+    <div class="px-3 ctx-header-text conteiner">
+      <div class="conteiner-row">
+        <p class="h1 text-xs-center">
+          XMOS Hi-Fi音频解决方案专家
+        </p>
+      </div>
+      <img src="assets/images/fty/item1.png" class="laverage-header-img d-lg-none d-xl-none mx-auto mb-5" />
+      <p class="h3 text-xs-center"> 我们深耕于XMOS Hi--Fi音频，麦克风阵列，语音降噪等领域，提供完整且可靠的客制化音频解决方案，致力于为客户创造价值</p>
+      <div class="conteiner-row conteiner-xs">
+        <button
+          type="button"
+          title="{{ page.next_page.title | e }}"
+          onclick="location.href='./concepts/'"
+          class="btn-dark btn-xl-large btn-lg-large mx-3  mt-3 my-md-5 my-lg-5 my-xl-5 box-shadow"
+        >
+            解决方案
+        </button>
+        <button
+          type="button"
+          title="{{ page.next_page.title | e }}"
+          onclick="window.open('https://join.slack.com/t/binbashar/shared_invite/zt-fw1692b6-9k4ADsWJ47lKacszphXM1w', '_blank')"
+          class="btn-warning btn-xl-large btn-lg-large mx-3 mt-3 my-md-5 my-lg-5 my-xl-5 box-shadow"
+        >
+          产品中心
+        </button>
+      </div>
+    </div>
+    <div class="ctx-header-img d-lg">
+      <img src="assets/images/fty/item1.png" class="laverage-header-img mx-lg-5" style="width: 100%" />
+    </div>
+  </div>
+
+</section>
+
+<section class="second-gradiant-body w-100">
+
+  <!--Whats is leverage-->
+  <div class="conteiner-row-lg conteiner-row-xl conteiner py-5 my-5">
+    <div class="conteiner" style="order:0; flex: 50%;">
+      <div class="conteiner ctx-what-is mx-auto">
+        <span class="display-3 text-dark Telegraf-UltraBold mt-4 text-align-center text-end-xl text-end-lg">为什么选择飞腾云？ </span>
+        <div class="conteiner text-dark h3 text-align-start text-end-xl text-end-lg my-xs-5 my-sm-5 my-md-5">
+          <p class="my-3">
+            <img src="assets/images/icons/check-ok.svg" class="mx-2" width="20px" height="20px"/>
+           我们有国内最专业的XMOS技术人才，助力客户在Hi-Fi音频，数字会议，本地扩音，降噪麦克风等项目快速落地
+          </p>
+          <p class="my-3">
+            <img src="assets/images/icons/check-ok.svg" class="mx-2" width="20px" height="20px"/>
+         我们提供XMOS Hi-Fi音频，麦克风阵列，语音降噪<span class="t-b">TurnKey</span>解决方案，满足不同的产品需求
+          <p class="my-3">
+            <img src="assets/images/icons/check-ok.svg" class="mx-2" width="20px" height="20px"/>
+            我们有经过市场验证的XMOS<span class="t-b"> 模组</span>及<span class="t-b">PCBA</span> ，助力客户快速完成产品设计
+          </p>
+           <p class="my-3">
+            <img src="assets/images/icons/check-ok.svg" class="mx-2" width="20px" height="20px"/>
+            我们有 <span class="t-b">1万m2</span>自动化生产车间，给客户提供高品质的产品以及快速的产品交付
+          </p>
+          <p class="my-3">
+            <img src="assets/images/icons/check-ok.svg" class="mx-2" width="20px" height="20px"/>
+            我们有完善的产品文档支持，方便客户快速获取产品开发相关技术资料
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="conteiner" style="order:1; flex: 50%; overflow:hidden;">
+      <img src="assets/images/fty/item11.png" class="mx-lg-5" style="width: 90%;margin-left: 20px"/>
+    </div>
+  </div>
+</section>
+
+<!--Our tech stack-->
+<section class="four-gray-body w-100">
+  <div class="md-grid conteiner pt-5  my-0 my-xl-4 my-lg-4">
+    <p class="display-3 text-dark Telegraf-UltraBold mt-4 text-align-center text-start-xl text-start-lg">合作流程</p>
+    <img src="assets/images/fty/item33.png" class="mx-auto my-5" width="80%"/>
+    <div class="conteiner conteiner-row-lg conteiner-row-xl my-4">
+      <div style="order:0; flex: 50%;">
+        <button
+          onclick="location.href='./concepts/our-tech-stack/'"
+          title="{{ page.next_page.title | e }}"
+          type="button"
+          class="btn-dark btn-xl-large btn-lg-large my-4 box-shadow mx-auto"
+        >
+          咨询及服务
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Footer-->
+<footer class="bg-dark w-100">
+  <div class="md-grid conteiner-row-xl conteiner-row-lg conteiner pt-5 my-4">
+    <div class="conteiner-row" style="flex:50%">
+      <div class="text-white d-flex" style="flex: 40%;">
+        <img src="assets/images/fty/logo1.png" class="mx-auto" width="80%" height="70%"/>
+      </div>
+      <div class="text-white h3" style="flex: 30%;">
+        <div class="conteiner text-white h3">
+          <ul>
+            <li class="cursor-pointer item-text-footer">
+              <a href="https://www.binbash.co/" target="_blank">解决方案</a>
+            </li>
+            <li class="cursor-pointer item-text-footer">
+              <a href="https://www.binbash.co/" target="_blank">产品中心</a>
+            </li>
+            <li class="cursor-pointer item-text-footer">
+              <a href="https://www.binbash.co/leverage" target="_blank">服务&支持 </a>
+            </li>
+            <li class="cursor-pointer item-text-footer">
+              <a href="https://medium.com/binbash-inc" target="_blank">下载中心</a>
+            </li>
+            <li class="cursor-pointer item-text-footer">
+              <a href="https://www.binbash.co/contact" target="_blank">开发文档</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-white h3" style="flex: 30%;">
+        <div class="conteiner text-white h3">
+          <ul>
+            <li class="cursor-pointer item-text-footer">
+              <a href="https://github.com/sponsors/binbashar" target="_blank">关于我们</a>
+            </li>
+            <li class="cursor-pointer item-text-footer">
+              <a href="https://www.binbash.co/team" target="_blank"> 关于XMOS</a>
+            </li>
+            <li class="cursor-pointer item-text-footer">
+              <a href="https://github.com/binbashar" target="_blank">加入我们</a>
+            </li>
+            <li class="cursor-pointer item-text-footer">
+              <a href="https://www.binbash.co/" target="_blank">咨询及服务</a>
+            </li>
+            <li class="cursor-pointer item-text-footer">
+              <a href="https://www.binbash.co/pricing" target="_blank">样品购买</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="conteiner-row" style="flex:50%">
+      <div class="text-white text-end h3" style="flex: 15%;">
+          <span>关注我们: </span>
+      </div>
+      <div class="text-white h3" style="flex: 55%;">
+                  <img
+            src="assets/images/fty/qrcode.png"
+            title="qrcode"
+            class="mx-3 cursor-pointer item-social-media"
+            width="40%"
+          />
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+{% endblock %}

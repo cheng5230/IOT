@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+  const lang = navigator.language;
+  var lang_l = localStorage.getItem("currLang");
+  var langzh = "zh-CN";
+  var test = location.href;
+  if (lang==langzh&&!lang_l){
+    location.href = test+"zh/"
+  }else{
+    location.href = test+"en/"
+  }
+    console.log("wwww:"+location.href);
+</script>
+<body>
+
+</body>
+</html>

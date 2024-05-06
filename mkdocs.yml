@@ -84,6 +84,7 @@ extra_javascript:
     - assets/javascripts/extra.js
 
 extra:
+  domain: https://phaten-iot.com/
   status:
     new: Recently added
     deprecated: Deprecated

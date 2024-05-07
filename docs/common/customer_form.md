@@ -1,5 +1,5 @@
 <div class="custForm">
-<form  action="https://www.phaten-iot.com/submit_zh.php" method="post">
+<form  action="https://cheng5230.github.io/submit_zh.php" method="post">
 <div>
 <h4>公司名:</h4>
 <input type="input" name='company' placeholder="公司名" />

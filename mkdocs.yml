@@ -6,7 +6,7 @@ site_name: 飞腾云音频|XMOS AI专业音频方案商|XMOS方案
 site_description: 深圳市飞腾云科技有限公司-XMOS AI专业音频方案商
 site_author: Phaten
 site_dir: '../../site/zh'
-copyright: Copyright &copy; 2024 <a href="https://www.phaten-iot.com">深圳市飞腾云科技有限公司</a>
+copyright: Copyright &copy; 2024 <a href="https://cheng5230.github.io/">深圳市飞腾云科技有限公司</a>
 
 #===================================================================================#
 # Mkdocs Theme (Material Mkdocs) + Extras
@@ -84,7 +84,7 @@ extra_javascript:
     - assets/javascripts/extra.js
 
 extra:
-  domain: https://phaten-iot.com/
+  domain: https://cheng5230.github.io/
   status:
     new: Recently added
     deprecated: Deprecated
